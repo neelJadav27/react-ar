@@ -1,5 +1,7 @@
 import {React, useState} from 'react';
-  
+import Marker from "../public/assets/market.patt";
+import Asset from "../public/assets/asset.jpeg";
+
 function App() {
 
   return (
@@ -16,13 +18,13 @@ function App() {
                 id="animated-marker"
                 type="pattern"
                 preset="custom"
-                url="/assets/marker.patt"
+                url={Marker}
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
             >
                 <a-image
-                    src="/assets/asset.jpeg"
+                    src={Asset}
                     scale="1 1 1"
                     class="clickable"
                     rotation="-90 0 0"
