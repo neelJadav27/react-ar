@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
-
+import {React, useState} from 'react';
+  
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+       <a-scene
+            vr-mode-ui="enabled: false;"
+            loading-screen="enabled: false;"
+            arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
+            id="scene"
+            embedded
+            gesture-detector
         >
-          Learn React
-        </a>
-      </header>
+            <a-marker
+                id="animated-marker"
+                type="pattern"
+                preset="custom"
+                url="./assets/marker.patt"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+            >
+                <a-image
+                    src="./assets/asset.jpeg"
+                    scale="1 1 1"
+                    class="clickable"
+                    rotation="-90 0 0"
+                    gesture-handler
+                ></a-image>
+            </a-marker>
+
+            <a-entity camera></a-entity>
+        </a-scene>
     </div>
   );
 }
