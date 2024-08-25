@@ -24,7 +24,7 @@ function App() {
                 cursor="fuse: false; rayOrigin: mouse;"
             >
                 <a-image
-                    src="/assets/asset.jpeg"
+                    src="/assets/dog.jpeg"
                     scale="1 1 1"
                     class="clickable"
                     rotation="-90 0 0"
