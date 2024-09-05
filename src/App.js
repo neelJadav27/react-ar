@@ -9,7 +9,7 @@ function App() {
        <a-scene
             vr-mode-ui="enabled: false;"
             loading-screen="enabled: false;"
-            arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
+            arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: true;"
             id="scene"
             embedded
             gesture-detector
@@ -18,7 +18,7 @@ function App() {
                 id="animated-marker"
                 type="pattern"
                 preset="custom"
-                url="assets/marker_v2.patt"
+                url="/react-ar/assets/marker_v2.patt"
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
