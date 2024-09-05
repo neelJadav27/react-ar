@@ -18,13 +18,13 @@ function App() {
                 id="animated-marker"
                 type="pattern"
                 preset="custom"
-                url="/react-ar/assets/marker_v2.patt"
+                url="/react-ar/public/assets/marker_v2.patt"
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
             >
                 <a-image
-                    src="assets/dog.jpeg"
+                    src="/react-ar/public/assets/dog.jpeg"
                     scale="1 1 1"
                     class="clickable"
                     rotation="-90 0 0"
