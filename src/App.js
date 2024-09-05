@@ -14,7 +14,10 @@ function App() {
             embedded
             gesture-detector
         >
-            <a-marker
+            <a-marker preset="hiro">
+                <a-box position="0 0.5 0" material="color: yellow;"></a-box>
+            </a-marker>
+            {/* <a-marker
                 id="animated-marker"
                 type="pattern"
                 preset="custom"
@@ -30,7 +33,7 @@ function App() {
                     rotation="-90 0 0"
                     gesture-handler
                 ></a-image>
-            </a-marker>
+            </a-marker> */}
 
             <a-entity camera></a-entity>
         </a-scene>
