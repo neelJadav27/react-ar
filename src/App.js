@@ -9,7 +9,7 @@ function App() {
        <a-scene
             vr-mode-ui="enabled: false;"
             loading-screen="enabled: false;"
-            arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: true;"
+            arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: falsegit status;"
             id="scene"
             embedded
             gesture-detector
